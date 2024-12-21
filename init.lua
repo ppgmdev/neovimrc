@@ -1,6 +1,8 @@
-print("hello ppgm")
+print("Hello ppgm")
 
 require("config.lazy")
+require("set")
+require("remap")
 
 vim.keymap.set("n", "<space><space>x", "<cmd>source %<CR>")
 vim.keymap.set("n", "<space>x", ":.lua<CR>")
