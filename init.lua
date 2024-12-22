@@ -1,9 +1,11 @@
 print("Hello ppgm")
 
-require("config/lazy")
-require("config/colors")
+require("config.lazy")
 require("set")
 require("remap")
+
+local x = 5
+print(x)
 
 vim.opt.shiftwidth = 4
 vim.opt.clipboard = "unnamedplus"

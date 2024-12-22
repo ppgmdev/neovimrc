@@ -1,8 +1,8 @@
 return {
-    {
-      "neovim/nvim-lspconfig",
-      dependencies = {
-	{
+  {
+    "neovim/nvim-lspconfig",
+    dependencies = {
+      {
 	"folke/lazydev.nvim",
 	ft = "lua", -- only load on lua files
 	opts = {
