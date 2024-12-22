@@ -1,6 +1,7 @@
 print("Hello ppgm")
 
-require("config.lazy")
+require("config/lazy")
+require("config/colors")
 require("set")
 require("remap")
 
@@ -15,9 +16,9 @@ vim.keymap.set("v", "<space>x", ":lua<CR>")
 
 -- Highlight when yanking
 vim.api.nvim_create_autocmd("TextYankPost", {
-	desc = "Highlight when yanking text",
-	group = vim.api.nvim_create_augroup("highligh-yank", {clear = true}),
-	callback = function()
-		vim.highlight.on_yank()
-	end,
+  desc = "Highlight when yanking text",
+  group = vim.api.nvim_create_augroup("highligh-yank", {clear = true}),
+  callback = function()
+    vim.highlight.on_yank()
+  end,
 })
