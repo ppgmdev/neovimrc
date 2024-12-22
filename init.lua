@@ -4,9 +4,6 @@ require("config.lazy")
 require("set")
 require("remap")
 
-local x = 5
-print(x)
-
 vim.opt.shiftwidth = 4
 vim.opt.clipboard = "unnamedplus"
 
@@ -19,7 +16,7 @@ vim.keymap.set("v", "<space>x", ":lua<CR>")
 -- Highlight when yanking
 vim.api.nvim_create_autocmd("TextYankPost", {
   desc = "Highlight when yanking text",
-  group = vim.api.nvim_create_augroup("highligh-yank", {clear = true}),
+  group = vim.api.nvim_create_augroup("highligh-yank", { clear = true }),
   callback = function()
     vim.highlight.on_yank()
   end,
