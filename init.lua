@@ -1,5 +1,3 @@
-print("Hello ppgm")
-
 require("config.lazy")
 require("set")
 require("remap")
