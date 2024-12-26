@@ -4,17 +4,10 @@ return {
   name = "rose-pine",
   config = function()
     require("rose-pine").setup({
-      disable_background = true,
-      dark_variant = "main",
-      dim_inactive_windows = false,
-      extend_background_behind_borders = true,
-      transparent = false,
-      enable = {
-        terminal = true,
-      },
       styles = {
-        sidebars = "dark",
-        floats = "dark",
+        italic = false,
+        transparency = true,
+        bold = false,
       }
     })
     vim.cmd("colorscheme rose-pine-main")
