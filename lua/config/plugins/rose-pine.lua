@@ -7,7 +7,7 @@ return {
       styles = {
         italic = false,
         transparency = true,
-        bold = false,
+        bold = true,
       }
     })
     vim.cmd("colorscheme rose-pine-main")
